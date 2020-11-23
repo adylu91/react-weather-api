@@ -1,0 +1,87 @@
+.app_wrapper {
+  margin: 0 auto;
+  min-height: 100vh;
+  min-width: 650px;
+  max-width: 1000px;
+  padding: 5vh 0;
+  display: flex;
+  justify-content: space-around;
+}
+.app_left_container,
+.app_right_container {
+  flex-basis: 45%;
+  background-color: rgba(255, 255, 255, 0.5);
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.app_logo {
+  font-family: "Nerko One", cursive;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.app_logo_container {
+  display: inline-block;
+  position: relative;
+}
+
+.app_logo_header {
+  position: relative;
+  font-size: 3rem;
+  z-index: 3;
+  color: cadetblue;
+  text-shadow: 0 0 10px white;
+}
+
+.app_logo_description {
+  font-size: 1rem;
+  position: relative;
+  z-index: 3;
+}
+
+.app_logo_img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  z-index: 2;
+  animation: rotateSun 25s infinite linear;
+}
+
+@keyframes rotateSun {
+  from {
+    transform: translateX(50%) rotate(0deg);
+  }
+  to {
+    transform: translateX(50%) rotate(360deg);
+  }
+}
+
+.app_input_container,
+.app_input_results {
+  margin: 10px 10px;
+}
+
+.app_input_label {
+  color: grey;
+  font-weight: 500;
+  font-style: italic;
+  margin-bottom: 2px;
+}
+
+.app_input_town {
+  width: 100%;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 1rem;
+  border: 2px solid black;
+}
+
+.app_input_results {
+  background-color: rgba(255, 255, 255, 0.5);
+  flex-grow: 1;
+  border: 2px solid black;
+}
