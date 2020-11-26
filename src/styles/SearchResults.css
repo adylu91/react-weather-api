@@ -1,0 +1,61 @@
+.searchResults_wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 10px;
+}
+
+.searchResults_item {
+  border: 2px solid black;
+  padding: 3px 2px 3px 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 2px 0;
+}
+
+.searchResults_item:nth-of-type(2n) {
+  background-color: white;
+}
+.searchResults_item:nth-of-type(2n + 1) {
+  background-color: cadetblue;
+}
+
+.searchResults_item:hover {
+  background-color: yellow;
+}
+
+.searchResults_header {
+  font-size: 1.2rem;
+  color: darkslategrey;
+}
+
+.searchResults_area {
+  color: darkslategray;
+  font-style: italic;
+  font-size: 0.8rem;
+}
+
+.searchResults_more {
+  border: 2px solid black;
+  background-color: green;
+  text-align: center;
+  padding: 10px 0;
+  font-weight: bold;
+  color: white;
+  font-size: 1.4rem;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchResults_alert {
+  border: 2px solid black;
+  background-color: darkcyan;
+  margin: 0 10px;
+  text-align: center;
+  padding: 10px 0;
+  font-weight: bold;
+  color: white;
+  font-size: 1.4rem;
+}
