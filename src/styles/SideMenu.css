@@ -1,0 +1,49 @@
+.sideMenu_header {
+  text-transform: uppercase;
+  color: black;
+  text-shadow: 1px 1px 2px white;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.sideMenu_clearBtn {
+  font-size: 1.2rem;
+  padding: 10px;
+  font-weight: bold;
+  border: 3px solid black;
+  display: block;
+  margin: 0 auto;
+  transition: 0.3s;
+}
+
+.sideMenu_clearBtn:hover {
+  color: white;
+  background-color: black;
+  border-color: white;
+}
+
+.sideMenu_town {
+  margin: 10px;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.sideMenu_town::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  box-shadow: 1px 1px 2px white;
+}
+
+.sideMenu_town:hover {
+  color: yellow;
+}
+
+.sideMenu_townsInfo {
+  text-align: center;
+  color: white;
+}

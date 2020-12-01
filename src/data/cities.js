@@ -1065,14 +1065,6 @@ export const cities = [
   },
   {
     name: "Dobra",
-    township: "łobeski",
-    province: "zachodniopomorskie",
-    area: 2.37,
-    people: 2353,
-    dentensity: 993,
-  },
-  {
-    name: "Dobra",
     township: "turecki",
     province: "wielkopolskie",
     area: 1.84,

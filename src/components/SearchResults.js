@@ -9,7 +9,7 @@ const SearchResults = (props) => {
       <div
         className="searchResults_item"
         key={it.name + it.province}
-        name={it.name + "_" + it.province}
+        name={"setTown_" + it.name + "_" + it.province}
         onClick={handleOnClick}
       >
         <h1 className="searchResults_header">{it.name}</h1>

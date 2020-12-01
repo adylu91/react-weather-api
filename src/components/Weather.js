@@ -2,6 +2,8 @@ import "../styles/Weather.css";
 
 const Weather = (props) => {
   const name = props.weather.cityName;
+  const handleOnClick = props.handleOnClick;
+
   const temp = (props.weather.temp - 273.15).toFixed(2);
   const description = props.weather.description;
   if (name !== "") {
@@ -22,6 +24,14 @@ const Weather = (props) => {
             Opis: <span>{description}</span>
           </h4>
         </div>
+        <button
+          className="saveBtn"
+          name="saveBtn"
+          type="button"
+          onClick={handleOnClick}
+        >
+          Zapisz
+        </button>
       </div>
     );
   } else {
